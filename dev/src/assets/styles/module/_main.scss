@@ -1,0 +1,20 @@
+.Top{
+  max-width: $max-width;
+  width: 100%;
+  font-family: Roboto;
+  padding: 0 25px;
+  margin: 0 auto;
+  &__Title{
+    color: $color-black;
+    font-size: 50px;
+    font-weight: 545;
+    line-height: 59px;
+    letter-spacing: 0.13px;
+  }
+  &__Button{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 60px 0;
+  }
+}
