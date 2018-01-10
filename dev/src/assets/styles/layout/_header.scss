@@ -1,3 +1,19 @@
 .l-Header{
+  width: 1168px;
+  height: 42px;
+  font-family: Roboto;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 100px 65px 98px;
+  &__Logo{
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0.13px;
+    width: 146px;
+    height: 42px;
+    &--Link{
+      color: $color-black;
+    }
+  }
 }

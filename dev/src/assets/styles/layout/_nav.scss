@@ -1,4 +1,19 @@
-.l-Navigation__Item{
-  display: flex;
-
+.Header{
+  &__Navigation{
+  }
+  &__Block{
+    width: 217px;
+    height: 15px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.13px;
+    display: flex;
+  }
+  &__List{
+    margin-right: 53px;
+    &--Link{
+      color: $color-black;
+    }
+  }
 }
