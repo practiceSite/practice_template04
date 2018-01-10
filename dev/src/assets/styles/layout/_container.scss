@@ -3,10 +3,13 @@
 	width: 100%;
 	overflow: hidden;
 	background-color: $color-base;
-	background-image: url("../../img/oval.svg");
+	background-image: url("/img/main_bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.Container{
+.Container {
 	max-width: 100rem;
 	margin: 0 auto;
 }
