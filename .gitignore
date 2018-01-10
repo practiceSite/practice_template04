@@ -58,3 +58,8 @@ typings/
 .env
 
 /public
+dev/css
+dev/img/
+dev/js
+dev/font
+dev/*.html
