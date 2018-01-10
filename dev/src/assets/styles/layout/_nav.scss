@@ -2,7 +2,6 @@
   &__Navigation{
   }
   &__Block{
-    width: 217px;
     height: 15px;
     font-family: Roboto;
     font-size: 12px;
@@ -11,7 +10,10 @@
     display: flex;
   }
   &__List{
-    margin-right: 53px;
+    margin-right: 50px;
+    &:last-child{
+      margin-right: 0;
+    }
     &--Link{
       color: $color-black;
     }
