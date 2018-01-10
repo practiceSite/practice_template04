@@ -1,0 +1,23 @@
+extend base/_layout
+append variables
+	//- Required
+	- const pageTitle= "webpack";
+	- const pageDescription= site.description;
+	- const pageKeywords= site.keywords;
+	- const key = ""
+	//- Optional
+	- const pageOgpTitle= "";
+	- const pageOgpImage= site.ogpImage
+	- const pageLang= "ja";
+	- const pageOgpType= "website";
+	//- Not modified
+	- const pageUrl= site.relativePath;
+
+block content
+	h1
+		| Template
+	h2
+		| Welcome!
+		br
+		| My Template WebSite.
+		
