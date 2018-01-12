@@ -1,7 +1,7 @@
 extend base/_layout
 append variables
 	//- Required
-	- const pageTitle= "webpack";
+	- const pageTitle= "Template";
 	- const pageDescription= site.description;
 	- const pageKeywords= site.keywords;
 	- const key = ""
@@ -23,3 +23,23 @@ block content
 			.Top__Button
 				a(href="#").button
 					| Get Source Code
+					
+	.Portfolio
+		.Portfolio__Inner
+			h2.Portfolio__Title
+				| Portfolio
+			.Portfolio__Title--Line
+			nav.Portfolio__Navigation
+				ul.Portfolio__Block
+					li.Portfolio__List
+						a(href="#").Portfolio__List--Link
+							| Home
+					li.Portfolio__List
+						a(href="#").Portfolio__List--Link
+							| Portfolio
+					li.Portfolio__List
+						a(href="#").Portfolio__List--Link
+							| About
+					li.Portfolio__List
+						a(href="#").Portfolio__List--Link
+							| Contact
