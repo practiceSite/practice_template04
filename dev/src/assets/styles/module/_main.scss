@@ -41,25 +41,37 @@
       border-bottom: 2px solid $color-gray;
     }
   }
-  &__Navigation{
-    padding: 40px 0 50px 0;
-  }
-  &__Block{
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.44px;
+  &__Images{
     display: flex;
+    flex-wrap: wrap;
   }
-  &__List{
-    margin-right: 20px;
-    &:last-child{
+  &__Items{
+    width: 380px;
+    height: 288px;
+    margin-right: 15px;
+    margin-bottom: 14px;
+    position: relative;
+    &:nth-child(3n){
       margin-right: 0;
     }
-    &--Link{
-      color: $color-gray;
-      &:hover{
-        color: $color-black;
-      }
+  }
+  &__Item{
+    width: 100%;
+    height: 100%;
+    display: block;
+    &:hover{
+      background-color: rgba(0,0,0,0.6);
+      background-image: url("../img/right-arrow_white.svg");
     }
+  }
+  &__Image{
+    width: 100%;
+    height: 100%;
+  }
+  &__Text{
+    color: $color-base;
+    position: absolute;
+    top: 144px;
+    right: 170px;
   }
 }
