@@ -61,7 +61,6 @@
     display: block;
     &:hover{
       background-color: rgba(0,0,0,0.6);
-      background-image: url("../img/right-arrow_white.svg");
     }
   }
   &__Image{
@@ -69,9 +68,21 @@
     height: 100%;
   }
   &__Text{
+    width: 128px;
+    height: 36px;
     color: $color-base;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.33px;
     position: absolute;
-    top: 144px;
-    right: 170px;
+    top: 125px;
+    right: 125px;
+  }
+  &__Arrow{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 135px;
+    right: 90px;
   }
 }
