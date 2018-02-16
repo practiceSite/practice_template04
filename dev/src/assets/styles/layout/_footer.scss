@@ -1,0 +1,20 @@
+.Footer{
+  height: 36px;
+  margin-top: 60px;
+  &__Line{
+    width: 100%;
+    border-bottom: 3px solid $color-gray;
+  }
+  &__Description{
+    width: 100%;
+    height: 100%;
+    color: $color-gray;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
