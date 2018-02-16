@@ -203,10 +203,54 @@
     color: $color-gray;
     font-size: 14px;
     line-height: 16px;
-    list-style-position: 0.5px;
+    letter-spacing: 0.5px;
   }
 }
 
 .fa-what{
   padding-bottom: 20px;
+}
+
+.Contact{
+  max-width: $max-width;
+  width: 100%;
+  font-family: Roboto;
+  padding: 60px 25px;
+  margin: 0 auto;
+  &__Title{
+    color: $color-black;
+    font-size: 40px;
+    font-weight: 545;
+    line-height: 47px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    &--Line{
+      width: 50px;
+      border-bottom: 2px solid $color-gray;
+      margin-bottom: 40px;
+    }
+  }
+  &__Description{
+    color: $color-gray;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    padding-bottom: 40px;
+  }
+  &__Address{
+    display: flex;
+  }
+  &__Email{
+    color: $color-black;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.61px;
+    margin: 0 0 20px 10px;
+  }
+  &__Message{
+    color: $color-gray;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
 }
