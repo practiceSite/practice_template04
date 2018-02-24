@@ -8,15 +8,84 @@
   justify-content: space-between;
   padding: 80px 25px 80px 25px;
   margin: 0 auto;
+  @include sp{
+    height: 100%;
+    width: 100%;
+    padding: 20px 15px 40px 15px;
+  };
   &__Logo{
     font-size: 35px;
     font-weight: 545;
     line-height: 41px;
     letter-spacing: 0.13px;
-    width: 146px;
-    height: 42px;
+    @include sp{
+      font-size: 20px;
+      line-height: 23px;
+    }
     &--Link{
       color: $color-black;
     }
   }
+}
+
+#Toggle{
+  display: none;
+  @include sp{
+    width: 40px;
+    height: 30px;
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+}
+
+.Humberg1{
+  @include sp{
+    width: 30px;
+    border-bottom: 2px solid $color-black;
+    position: absolute;
+    top: 31px;
+    right: 10px;
+  }
+}
+.Humberg2{
+  @include sp{
+    width: 30px;
+    border-bottom: 2px solid $color-black;
+    position: absolute;
+    top: 38px;
+    right: 10px;
+  }
+}.Humberg3{
+  @include sp{
+    width: 30px;
+    border-bottom: 2px solid $color-black;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+  }
+}
+
+#Toggle.is-active{
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+#Toggle.is-active .Humberg2{
+  width: 0px;
+}
+
+#Toggle.is-active .Humberg1.Humberg3{
+  transition-delay: 0.3s;
+}
+
+#Toggle.is-active .Humberg1{
+  transform: translateY(13px);
+}
+
+
+#Toggle.is-active .Humberg3{
+  transform: translateY(-1px)rotate(90deg);
 }
