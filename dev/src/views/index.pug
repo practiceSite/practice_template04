@@ -48,9 +48,10 @@ block content
 					.Portfolio__Items
 						a(href="#").Portfolio__Item
 							img(src="../img/dummy.jpg").Portfolio__Image
-							span.Portfolio__Text
-								| Template
-							img(src="../img/right-arrow_white.svg").Portfolio__Arrow
+							span.Portfolio__Hovers
+								span.Portfolio__Text
+									| Template
+								img(src="../img/right-arrow_white.svg").Portfolio__Arrow
 			a(href="#").Portfolio__Button
 				| more
 				img(src="../img/right-arrow_blue.svg").Portfolio__Button--Image
@@ -61,7 +62,8 @@ block content
 				| About me
 			.About__Title--Line
 			.About__Contents
-				img.About__Image(src="../img/about.jpg")
+				p.About__Image
+					img(src="../img/about.jpg" width="450" height="450")
 				.About__Description
 					h3.About__Name
 						| John Smith
@@ -70,7 +72,7 @@ block content
 					p.About__Job
 						| Web Designer / Frontend Engineer / Photographer
 					p.About__Myself
-						| hogeeee
+						| dummytextdummytextdummytextdummytextdummytextdummytext
 					i.fas.fa-link
 					a(href="#").About__Link
 						| http://sample.com
