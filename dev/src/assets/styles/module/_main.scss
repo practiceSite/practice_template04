@@ -4,18 +4,28 @@
   font-family: Roboto;
   padding: 0 25px;
   margin: 0 auto;
+  @include sp{
+    padding: 20px 15px 40px 15px;
+  }
   &__Title{
     color: $color-black;
     font-size: 50px;
     font-weight: 545;
     line-height: 59px;
     letter-spacing: 0.13px;
+    @include sp{
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
   &__Button{
     font-family: Roboto;
     font-size: 14px;
     line-height: 16px;
     margin: 60px 0;
+    @include sp{
+      margin: 60px 0 0 0;
+    }
   }
 }
 
@@ -36,6 +46,10 @@
     line-height: 47px;
     margin-top: 60px;
     padding-bottom: 20px;
+    @include sp{
+      font-size: 30px;
+      line-height: 35px;
+    }
     &--Line{
       width: 50px;
       border-bottom: 2px solid $color-gray;
