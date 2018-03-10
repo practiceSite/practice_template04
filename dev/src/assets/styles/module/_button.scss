@@ -14,10 +14,32 @@
   margin-right: 13px;
   padding-bottom: 60px;
   position: relative;
+  @include sp{
+    display: none;
+  }
   &--Image{
     width: 13px;
     height:6.5px;
     position: absolute;
     top: 8px;
+    @include sp{
+      display: none;
+    }
+  }
+  &--sp{
+    display: none;
+    @include sp{
+      color: $color-base;
+      background-color: $color-blue;
+      font-family: Roboto;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.5px;
+      margin: 40px auto 0 auto;
+      padding: 14px 82px 22px 82px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

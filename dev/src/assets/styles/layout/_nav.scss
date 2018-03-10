@@ -71,6 +71,9 @@
 .Portfolio{
   &__Navigation{
     padding: 40px 0 50px 0;
+    @include sp{
+      padding: 30px 0;
+    }
   }
   &__Block{
     font-size: 14px;

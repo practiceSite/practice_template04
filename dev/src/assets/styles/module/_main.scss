@@ -4,6 +4,7 @@
   font-family: Roboto;
   padding: 0 25px;
   margin: 0 auto;
+  box-sizing: border-box;
   @include sp{
     padding: 20px 15px 40px 15px;
   }
@@ -35,6 +36,10 @@
   font-family: Roboto;
   padding: 0 25px;
   margin: 0 auto;
+  box-sizing: border-box;
+  @include sp{
+    padding: 20px 15px 40px 15px;
+  }
   &__Inner{
     display: flex;
     flex-direction: column;
@@ -49,6 +54,7 @@
     @include sp{
       font-size: 30px;
       line-height: 35px;
+      margin: 0;
     }
     &--Line{
       width: 50px;
@@ -65,6 +71,14 @@
     margin-right: 15px;
     margin-bottom: 14px;
     position: relative;
+    @include sp{
+      width: 450px;
+      height: 300px;
+      margin: 0 auto 15px auto;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     &:nth-child(3n){
       margin-right: 0;
     }
@@ -103,6 +117,9 @@
     position: absolute;
     top: 125px;
     right: 125px;
+    @include  sp{
+      right: 165px;
+    }
   }
   &__Arrow{
     width: 19px;
@@ -110,6 +127,9 @@
     position: absolute;
     top: 135px;
     right: 90px;
+    @include sp{
+      right: 120px;
+    }
   }
 }
 
@@ -119,6 +139,10 @@
   font-family: Roboto;
   padding: 60px 25px;
   margin: 0 auto;
+  box-sizing: border-box;
+  @include sp{
+    padding: 20px 15px 40px 15px;
+  }
   &__Title{
     color: $color-black;
     font-size: 40px;
@@ -126,23 +150,46 @@
     line-height: 47px;
     margin-top: 60px;
     padding-bottom: 20px;
+    @include sp{
+      font-size: 30px;
+      line-height: 35px;
+      margin: 0;
+    }
     &--Line{
       width: 50px;
       border-bottom: 2px solid $color-gray;
       margin-bottom: 40px;
+      @include sp{
+        margin-bottom: 30px;
+      }
     }
   }
   &__Contents{
     display: flex;
+    @include sp{
+      flex-direction: column;
+    }
   }
   &__Image{
     width: 400px;
     height: 450px;
     padding-right: 80px;
+    @include sp{
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0 30px 0;
+      margin: 0 auto;
+    }
     & img{
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @include sp{
+        border-radius: 50%;
+      }
     }
   }
   &__Name{
@@ -160,22 +207,28 @@
     letter-spacing: 0.5px;
     margin: 0 0 60px 5px;
     display: inline-block;
+    @include sp{
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
   }
   &__Myself{
-    width: 640px;
-    height: 110px;
     color: $color-gray;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 60px;
     word-break: break-all;
+    @include sp{
+      margin-bottom: 40px;
+    }
   }
   &__Link{
     color: #528DD1;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.5px;
-    margin: 0 0 20px 5px;
+    margin: 0 0 25px 5px;
     display: inline-block;
   }
 }
@@ -190,6 +243,10 @@
   font-family: Roboto;
   padding: 60px 25px;
   margin: 0 auto;
+  box-sizing: border-box;
+  @include sp{
+    padding: 20px 15px 40px 15px;
+  }
   &__Title{
     color: $color-black;
     font-size: 40px;
@@ -197,6 +254,11 @@
     line-height: 47px;
     margin-top: 60px;
     padding-bottom: 20px;
+    @include sp{
+      font-size: 30px;
+      line-height: 35px;
+      margin: 0;
+    }
     &--Line{
       width: 50px;
       border-bottom: 2px solid $color-gray;
@@ -206,14 +268,18 @@
   &__Items{
     display: flex;
     justify-content: space-between;
+    @include sp{
+      flex-direction: column;
+    }
   }
   &__Item{
-    width: 370px;
-    height: 257px;
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include sp{
+      margin-right: 0;
+    }
     &:last-child{
       margin-right: 0;
     }
@@ -225,6 +291,9 @@
     line-height: 19px;
     letter-spacing: 0.5px;
     padding-bottom: 20px;
+    @include sp{
+      padding-bottom: 10px;
+    }
     &--Line{
       width: 30px;
       border-bottom: 2px solid $color-gray;
@@ -236,6 +305,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.5px;
+    word-break: break-all;
   }
 }
 
@@ -249,6 +319,10 @@
   font-family: Roboto;
   padding: 60px 25px;
   margin: 0 auto;
+  box-sizing: border-box;
+  @include sp{
+    padding: 20px 15px 40px 15px;
+  }
   &__Title{
     color: $color-black;
     font-size: 40px;
@@ -256,6 +330,11 @@
     line-height: 50px;
     margin-top: 60px;
     padding-bottom: 20px;
+    @include sp{
+      font-size: 30px;
+      line-height: 35px;
+      margin: 0;
+    }
     &--Line{
       width: 50px;
       border-bottom: 2px solid $color-gray;
@@ -268,6 +347,9 @@
     line-height: 19px;
     letter-spacing: 0.5px;
     padding-bottom: 40px;
+    @include sp{
+      padding-bottom: 25px;
+    }
   }
   &__Address{
     display: flex;
