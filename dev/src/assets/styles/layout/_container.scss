@@ -7,6 +7,9 @@
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: cover;
+	@include sp{
+		background-image: url("/img/bg_sp.png");
+	}
 }
 
 .Container {

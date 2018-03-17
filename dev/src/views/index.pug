@@ -33,28 +33,33 @@ block content
 				ul.Portfolio__Block
 					li.Portfolio__List
 						a(href="#").Portfolio__List--Link
-							| Home
+							| ALL
 					li.Portfolio__List
 						a(href="#").Portfolio__List--Link
-							| Portfolio
+							| WEB
 					li.Portfolio__List
 						a(href="#").Portfolio__List--Link
-							| About
+							| PICTURE
 					li.Portfolio__List
 						a(href="#").Portfolio__List--Link
-							| Contact
+							| LOGO
+					li.Portfolio__List
+						a(href="#").Portfolio__List--Link
+							| GRAPHIC
 			.Portfolio__Images
 				- for (let i = 1; i < 10; i++)
 					.Portfolio__Items
 						a(href="#").Portfolio__Item
 							img(src="../img/dummy.jpg").Portfolio__Image
-							span.Portfolio__Hovers
+							.Portfolio__Hovers
 								span.Portfolio__Text
 									| Template
 								img(src="../img/right-arrow_white.svg").Portfolio__Arrow
 			a(href="#").Portfolio__Button
 				| more
 				img(src="../img/right-arrow_blue.svg").Portfolio__Button--Image
+			a(href="#").Portfolio__Button--sp
+				| more portfolio
 		
 	.About
 		.About__Inner
@@ -62,7 +67,7 @@ block content
 				| About me
 			.About__Title--Line
 			.About__Contents
-				p.About__Image
+				.About__Image
 					img(src="../img/about.jpg" width="450" height="450")
 				.About__Description
 					h3.About__Name
@@ -72,12 +77,12 @@ block content
 					p.About__Job
 						| Web Designer / Frontend Engineer / Photographer
 					p.About__Myself
-						| dummytextdummytextdummytextdummytextdummytextdummytext
+						| dummytextdummytextdummytextdummytextdummytextdummytextdajsdfdsfocjdsofjoasdjfsaf;sajfo;sfojwofisdfsoijfdajfjsofjsoidjf;sioa
 					i.fas.fa-link
 					a(href="#").About__Link
 						| http://sample.com
 					.About__Share
-						a(href="#"): i.fab.fa-facebook-f.fa-2x.faa-pulse.animated
+						a(href="#"): i.fab.fa-facebook-f.fa-2x
 						a(href="#"): i.fab.fa-twitter.fa-2x
 						a(href="#"): i.fab.fa-instagram.fa-2x
 
@@ -93,7 +98,7 @@ block content
 						| WEB DESIGN
 					.What__Skill--Line
 					p.What__Description
-						| hogehoge
+						| hogehogedsjafoefoaj;fjesfjasf;ljwao;efjs;dlkfjaeow;ifjsldkjfa;sdflkdsjfksajd;lfkjawo;fjsdlfkfjo;sdfadlfkjao;e
 				.What__Item
 					i.fas.fa-code.fa-4x.fa-what
 					h3.What__Skill
@@ -123,3 +128,12 @@ block content
 				| sample@sample.com
 		p.Contact__Message
 			| I will reply by the next business day.
+
+
+	script.
+		$(document).ready(function(){
+			$("#Toggle").click(function(){
+		    $(this).toggleClass("is-active"),
+				$(".Header__Block").slideToggle();
+		  });
+		});

@@ -1,6 +1,9 @@
 .Footer{
   height: 36px;
   margin-top: 60px;
+  @include sp{
+    margin-top: 80px;
+  }
   &__Line{
     width: 100%;
     border-bottom: 3px solid $color-gray;

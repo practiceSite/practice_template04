@@ -1,7 +1,7 @@
 // Break point
 @mixin breakpoint( $point ) {
 	@if $point == sp {
-		@media ( min-width: 480 ) {
+		@media ( min-width: 480px ) {
 			@content ;
 		}
 	}
@@ -30,4 +30,10 @@
 
 @mixin opacity( $opacity, $color01:#000 ) {
 	background-color: rgba( $color01, $opacity );
+}
+
+@mixin sp{
+	@media (max-width: ($width-sp)){
+		@content;
+	}
 }
